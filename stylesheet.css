@@ -1,0 +1,155 @@
+/* General Body Styles */
+body {
+  padding-top: 100px; /* Adjust this value based on your header's height to prevent overlap */
+  background-color: rgba(220, 115, 140, 0.452);
+  font-family: Roboto Condensed, sans-serif; /* Added sans-serif fallback */
+}
+
+/* Header Section (contains #homeButton and .primary-nav) */
+.main-header { /* Using a class for the header element */
+  position: fixed; /* Keep it pinned to the top of the viewport */
+  top: 0; /* Align to the very top */
+  left: 0; /* Align to the very left */
+  width: 97%; /* Make it span the full width */
+  z-index: 900; /* Ensure it's on top of other elements */
+  display: flex; /* Makes its children flex items, arranging them in a row */
+  justify-content: space-between ; /* Pushes #homeButton to the left, primary-nav to the right */
+  align-items: center; /* Vertically aligns items (h1 and nav) in the center of the header */
+  font-family: Roboto Condensed, sans-serif;
+  height: 90px; /* Set a specific height for the header */
+}
+
+/* Home Button/Branding Link Styles */
+#homeButton {
+  display: inline-block; /* Essential for Flexbox */
+  color: black; /* Set the anchor tag itself to black */
+  padding: 0;
+  border-radius: 0;
+  font-size: .5em; /* Let h1 control font size */
+  font-weight: normal; /* Let h1 control font weight */
+  border: none;
+  cursor: pointer;
+  transition: none;
+  text-decoration: none; /* Removes the underline from the anchor tag */
+  margin: 0; /* Remove default margins that might affect alignment */
+}
+
+#homeButton h1 {
+  
+  margin:0%; /* Remove default h1 margins */
+  padding: 0; /* Remove default h1 padding */
+  color: black; /* Ensure h1 color is black */
+  font-size: 2em; /* Set the desired font size for the header text */
+  font-weight: 700; /* Makes the text bold */
+  font-family: Roboto Condensed, sans-serif; /* Applies the font stack */
+  text-decoration: none; /* Ensure no underline on h1 text */
+  white-space: nowrap;
+}
+
+/* Primary Navigation Styles (Spheres) */
+.primary-nav {
+white-space: nowrap;
+  margin-left: 50%; /* Remove default margins */
+  padding: 0; /* Remove default paddings */
+  z-index: 100;
+}
+
+.primary-nav ul {
+  white-space: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.primary-nav ul li {
+  margin-left: 50px; /* Space between spheres */
+}
+
+.primary-nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px; /* Set a fixed width for the sphere */
+  height: 80px; /* Set a fixed height for the sphere */
+  border-radius: 50%; /* Create the spherical shape */
+  color: white; /* Text color */
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  
+  font-family: Roboto Condensed, sans-serif;
+  font-size: 1em;
+}
+
+/* Different Colors for Each Primary Nav Sphere */
+.primary-nav ul li:nth-child(1) a {
+  background-color: #ff6347; /* Tomato Red */
+}
+
+.primary-nav ul li:nth-child(2) a {
+  background-color: #4682b4; /* Steel Blue */
+}
+
+.primary-nav ul li:nth-child(3) a {
+  background-color: #3cb371; /* Medium Sea Green */
+}
+
+/* Hover effect for primary nav spheres */
+.primary-nav ul li a:hover {
+  background-color: #d5cccc; /* A lighter shade for hover, or a different color */
+  transform: scale(1.05); /* Slightly enlarge */
+  color: #410707; /* Change text color on hover if needed */
+}
+
+
+/* Main Content Area */
+.main-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* Aligns content to the top */
+  gap: 3%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30%;
+}
+
+.Headshotimg {
+  width: 450px;
+  height: 490px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Text Content Area */
+.text-content {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.text-content h2 {
+  font-size: 4em;
+  font-weight: 900;
+  margin-bottom: 0.2em;
+  font-family: Palatino, "URW Palladio L", serif;
+  margin-top: 0;
+}
+
+.text-content p {
+  margin-top: 0;
+  font-size: 1.5em;
+  font-weight: 150;
+  margin-bottom: 2em;
+  font-family: Palatino, "URW Palladio L", serif;
+}
+
+
+
